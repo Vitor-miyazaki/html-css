@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representações das cores</title>
+    <link rel="shortcut icon" href="imagens/check.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: arial;
+            font-size: 14pt;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+            color: #0000ff85;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como representar as cores por parâmetros diferentes</h1>
+
+    <h2 style="background-color: blue; color: white;">Paleta de cores prontas</h2>
+    <ul>
+        <li>Utilizando as cores prontas, que o próprio sistema oferece, como: blue, green, yellow, white etc;</li>
+        <li>O problema é que as opções de cores são extremamente limitadas;</li>
+        <li>Neste caso, a cor de fundo é azul e a cor das letras é branca, ou seja, <em>"blue"</em> e <em>"white"</em> respectivamente.</li>
+    </ul>
+
+
+    <h2 style="background-color: #0000ff; color: #ffffff;">Cores hexadecimais</h2>
+    <p>
+       <ul>
+           <li>Números decimais: 0 1 2 3 4 5 6 7 8 9;</li> 
+           <li>Números exadecimais: 0 1 2 3 4 5 6 7 8 9 a b c d e f;</li> 
+           <li>No caso, representamos as cores por #00 00 00 até #ff ff ff &rarr; preto e branco respectivamente;</li>
+           <li>Os primeiros 2 digítos representam o tom verde. Os últimos representam o tom de azul. Os do meio representam os tons de vermelho.</li>
+           <li>00 &rarr; representa o mínimo da cor, ou seja, preto;</li>
+           <li>ff &rarr; representa o máximo da cor, ou seja, branco;</li>
+           <li>Para fazer a cor de Background blue, então representamos da seguinte forma: #0000ff.</li>
+       </ul>
+    </p>
+    
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255,255,255);">Cores rgb</h2>
+    <ul>
+        <li>r &rarr; red / g &rarr; green / b &rarr; blue;</li>
+        <li>Neste caso, a númeração será de 0 até 255, seguindo a ordem das cores. Por exemplo, o background blue, é representado por rgb(0,0,255). Já a cor da fonte white, por rgb(255,255,255)</li>
+    </ul>
+    
+    
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Cores hsl</h2>
+    <ul>
+        <li>h &rarr; hue (matiz) / s &rarr; saturation (saturação) / l &rarr; lightness (Luminância)</li>
+        <li>Blue representado por hsl(240, 100%, 50%) e white por  hsl(0, 0%, 100%).</li>
+    </ul>  
+    
+
+    <h2 style="background-color: rgba(0, 0, 255, 0.200);">Parâmetro de transparência: <strong>alpha</strong></h2>
+
+    <ul>
+        <li>Podemos colocar transparência em nossas cores, essa será a 4ª váriavel.</li>
+        <li>Essa transparência, tem valores que vão do 0 até 0,999. Quanto maior o número, menor a transparência. Neste caso utilizei o formato rgb(0, 0, 255, 0.200);</li>
+    </ul>
+
+    <a href="pag002.html" target="_self" rel="next" style="text-align: right; display: block;"><img src="imagens/direita.png" alt="próxima página"></a>
+    
+</body>
+</html>

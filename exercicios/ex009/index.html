@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>São listas que seguem uma sequência, seja númerica ou alfabética. Representada pela <strong>TAG &lt;ol type&gt;</strong> e a <strong>TAG &lt;li&gt;</strong>. Os tipos representados pela <em>"type"</em> são:<ins> 1,A,a,I e i</ins>. Exemplos:</p>
+    <ol type="1">
+       <li>Número</li> 
+       <li>Número</li>
+       <li>Número</li>
+    </ol>
+    <ol type="A">
+        <li>Letra maiúscula</li>
+        <li>Letra maiúscula</li>
+        <li>Letra maiúscula</li>
+    </ol>
+    <ol type="a">
+        <li>Letra minúscula</li>
+        <li>Letra minúscula</li>
+        <li>Letra minúscula</li>
+    </ol>
+    <ol type="I">
+        <li>Números romanos maiúsculo</li>
+        <li>Números romanos maiúsculo</li>
+        <li>Números romanos maiúsculo</li>
+    </ol>
+    <ol type="i">
+        <li>Números romanos minúsculo</li>
+        <li>Números romanos minúsculo</li>
+        <li>Números romanos minúsculo</li>
+    </ol>
+    <p>Para finalizar, também podemos iniciar a contagem da lista por diferentes números ou letras, ou seja, não necessáriamente começando por 01 ou A. Para isso, acrecentamos na <strong>tag &lt;ol&gt;</strong> a função <em>start="Número"</em>. Então por exemplo, quero que minha lista comece pelo número "3":</p>
+    <ol type="1" start="3">
+        <li>Número</li>
+        <li>Número</li>
+        <li>Número</li>
+    </ol>
+    <p>Ou quero começar pela 5ª letra do alfabéto:</p>
+    <ol type="A" start="5">
+        <li>Letra maiúscula</li>
+        <li>Letra maiúscula</li>
+        <li>Letra maiúscula</li>
+    </ol>
+    <p>Segue imagem deste código em html:</p>
+    <img src="exemplo.jpg" alt="Exemplo de lista ordenada em html">
+    <h2>Listas não ordenadas</h2>
+    <p>Diferentemente do anterior, as listas não ordenadas, não precisam ter uma sequência. Geralmente são representadas por tópicos de diversos formatos. No <abbr title="Hipertext Markup Language">HTML</abbr> utilizamos 03, sendo eles:</p>
+    <ul type="disc">
+        <li><ins>Circulo preenchido</ins>, representado por <em>"disc"</em>.</li>
+    </ul>
+    <ul type="circle">
+        <li><ins>Circulo sem preenchimento</ins>, representado por <em>"circle"</em>.</li>
+    </ul>
+    <ul type="square">
+        <li><ins>Quadrado preenchido</ins>, representado por <em>"square"</em>.</li>
+    </ul>
+    <p>As TAGS utilizadas para esse tipo de representação, são <strong>&lt;ul type=""&gt; e &lt;li&gt;</strong>. Para uma melhor visualização segue um exemplo em imagem:</p>
+    <img src="exemplo1.jpg" alt="Exemplo de lista não ordenada em html">
+    <h2>Desafio</h2>
+    <p>Agora, vou realizar o exercicio proposto pelo professor Guanabara em seu <abbr title="Portable Document Format">PDF</abbr> chamado <em>Listas HTML</em>.
+    <h3>Lista Dos Meus Jogos Favoritos</h3>
+    <ul>
+        <li>Super Nintendo</li>
+        <ol type="1">
+            <li>Futebol</li>
+            <ul>
+                <li>International Superstar Soccer Deluxe (1995)</li>
+                <li>Campeonato Brasileiro 96</li>
+            </ul>
+            <li>Mario</li>
+            <li>Aladyn</li>
+            <li>Star Wars</li>
+            <ul>
+                <li>Super Star Wars</li>
+                <li>Super Star Wars: Return of the Jedi</li>
+            </ul>
+            <li>Batman</li>
+        </ol>
+        <li>Playstation 2</li>
+        <ol type="1">
+            <li>Futebol</li>
+            <ul>
+                <li>Pes</li>
+                <li>Winning Eleven</li> 
+            </ul>
+            <li>Resident Evil 04</li>
+            <li>God of War</li>
+            <ul>
+                <li>God of War 01</li>
+                <li>God of War 02</li>
+                <li>God of War 03</li>
+            </ul>
+            <li>Black</li>
+            <li>Kingdom Hearts 02</li>
+            <li>Need for Speed Undercover</li>
+        </ol>
+        <li>Playstation 4</li>
+        <ol>
+            <li>Pes 2019</li>
+            <li>GTA V</li>
+            <li>God of War</li>
+            <li>Kingdom Hearts 03</li>
+            <li>The Last of Us Remastered</li>          
+        </ol>
+    </ul>
+    <h2>Listas de Definição</h2>
+    <p>Básicamente são listas que trazem o termo e sua descrição, lembrando bastante um discionário. Anteriormente vimos que para começar uma lista é necessário uma TAG de abertura, sendo <strong>&lt;ol&gt; (listas ordenadas)</strong> e <strong>&lt;ul&gt; (listas não ordenadas)</strong>, onde aqui também teremos essa TAG representada por <strong>&lt;dl&gt; (Lista de definição)</strong>. O que muda, é a substituição da <strong>TAG &lt;li&gt;</strong> já que agora passarão a ser utilizadas <ins>02 novas TAGS</ins>. A <strong>TAG &lt;dt&gt;</strong> para o <ins><em>"TERMO"</em></ins> e a <strong>TAG &lt;dd&gt;</strong> para a <ins><em>"DEFINIÇÃO"</em></ins>. Segue exemplo:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Significa Hipertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Significa Cascading Style Sheets</dd>
+    </dl>
+    <p>Para uma melhor visualização segue um exemplo em imagem:</p>
+    <img src="Exemplo2.jpg" alt="Exemplo de lista de definição em html">
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+
+        body{
+
+            background-color: darkblue;
+        }
+        header{
+
+            height:300px;
+            width: 300px;
+            background-color: white;
+
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+
+            margin: 20px auto;
+
+            outline: 3px dashed orange;
+        }
+
+        header > p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            border: 2px solid red;
+            width: 144px;
+            margin: 134px auto;
+            outline: 3px dashed orange;
+        }
+
+        main{
+            background-color: white;
+            border: 2px solid red;
+            padding: 5px;
+            outline: 3px dashed orange;
+            
+        }
+
+        main > p{
+            width: 739px;
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px auto;
+            outline: 3px dashed orange;
+        }
+
+        main > p > a{
+            border: 2px solid red;
+            padding: 3px;
+            text-decoration: none;
+            outline: 2px dashed orange;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <p>Olá Mundo!!</p>
+    </header>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis <a href="#">repudiandae</a> ducimus provident laborum quas esse?</p>
+    </main>
+    
+</body>
+</html>

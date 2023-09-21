@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Página 01</h1>
+    <h2>Link externo</h2>
+    <p>Para colocar um link externo, utilizo a seguinte estrutura de tag's: <br>
+    <code>
+        &lt;a href="https://www.google.com.br/" target="_blank" rel="external" hreflang="pt-br"&gt; <a href="https://www.google.com.br/" target="_blank" rel="external" hreflang="pt-br">Clique aqui para acessar o google</a> &lt;/a&gt; 
+    </code>
+    </p>
+    <h3>&rarr; Nofollow</h3>
+    <p>Pelo que entendi, utilizando o parâmetro "nofollow", você basicamente diz ao google que não tem conhecimento desta página externa, ou seja, que você "não os segue". Isso é basicamente uma ferramenta que gera algum tipo de impacto para os mecênismos de buscas do google. Geralmente é utilizada para sites patrocinados. Exemplo:</p>
+    <code>
+        &lt;a href="https://www.magazineluiza.com.br/" target="_blank" <strong><big>rel"nofollow"</big></strong>&gt; <a href="https://www.magazineluiza.com.br/" target="_black" ref="nofollow">Clique aqui para acessar o site da Magazine Luiza</a> &lt;/a&gt;
+    </code>
+    
+    <h2>Link interno</h2>
+    <p>Para prosseguir para um link interno, precisamos criar as outras páginas no html. Essas páginas, podem ser criadas na mesma pasta do arquivo index.html ou uma subpasta deste arquivo.</p>
+    
+    <h3>&rarr; Link interno - mesma pasta</h3>
+        <code>
+            &lt;a href="pag002.html" target="_self" rel="next"&gt; <a href="pag002.html" target="_self" rel="next">Clique aqui para acessar a página 02</a> &lt;/a&gt;
+        </code>
+    
+
+    <h3>&rarr; Link interno - subpasta</h3>
+        <code>
+            &lt;a href="noticias/pag003.html" target="_self" rel="next"&gt; <a href="noticias/pag003.html" target="_self" rel="next">Clique aqui para acessar a página 03</a> &lt;/a&gt;
+        </code>
+
+    
+</body>
+</html>
