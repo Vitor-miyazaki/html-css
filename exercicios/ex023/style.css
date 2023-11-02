@@ -3,22 +3,30 @@
 body{
     background: white URL('imagens/fundo-madeira.jpg') no-repeat fixed center center /cover;
     position: relative;
+    
 }
 
 .celular{
-    width: 250px;
-    height: 400px;
-    background-color: aqua;
+    width: 280px;
+    height:490px;
+    border-radius: 40px;
+    margin-left:10px;
+    background: rgba(255, 255, 255, 0) url('imagens/frame-iphone.png') no-repeat fixed center center /100% 100%;
     display: block;    
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 10%);
+    
 }
 
-.celular > img{
-    width: 260px;
-    height: 450px;
+.celular > iframe{
+    background-color: rgb(0, 255, 255);
+    margin: 0px;
+    border: 2px solid rgb(240, 240, 240);
+    width: 246px;
+    height: 378.5px;
+    display: block;    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,11 +39,11 @@ body{
     display: block;    
     position: absolute;
     top: 50%;
-    left: 94%;
+    left: 90%;
     transform: translate(-50%, 10%);
 }
 
-.botoes > img{
+.botoes > a > img{
     background-color: white;
     margin: auto;
     border-radius: 50%;
@@ -44,9 +52,19 @@ body{
     width: 50px;
     display: block;  
     margin-bottom: 20px;  
-    
-
 }
+
+.botoes > a > img:hover{
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid rgb(114, 253, 0);
+    box-shadow: 0px 0px 10px 10px rgb(49, 29, 29);
+    height: 70px;
+    width: 70px;
+    display: block;  
+    margin-bottom: 20px;  
+}
+
 
 
 
