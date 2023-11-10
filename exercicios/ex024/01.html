@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando a Label</h1>
+
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"> </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <p>Sendo que</p>
+    <ul>
+        <li>autocomplete &rarr; Sugere um preenchimento automático do formulário, com base nos preenchimentos anteriores; </li>
+        <li>Action &rarr; Destino do envio/submit deste formulário. Este destino pode ser uma página de php, java ou outra linguagem de programação; </li>
+        <li>Label &rarr; Relaciona o texto (nome/sobrenome) com o input, ajudando as ferramentas de buscas (google por exemplo) e facilita no uso por celular; </li>
+    </ul>
+    
+</body>
+</html>

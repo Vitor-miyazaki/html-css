@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        h1, h2{
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Métodos GET e POST</h1>
+
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"> </p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <h2>Quando devo utilizar o Método POST?</h2>
+    <ul>
+        <li>Quando passar de 3000 bits (aproximadamente 3000 palavras);</li>
+        <li>Mais segurança, pois não aparece os dados do preenchimento na URL (não é 100% seguro, para isso é necessário conhecimento em https);</li>
+        <li>Envio de arquivos, fotos...</li>
+    </ul>
+</body>
+</html>
