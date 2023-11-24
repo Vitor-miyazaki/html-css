@@ -23,6 +23,27 @@
         </fieldset>
         <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
     </form>
+
+    <!--Checkbox e radio-->
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Escolha o seu sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="mas" value="M" checked><label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha os seus esportes favoritos</legend>
+            <p><label for="ifut">Futebol</label><input type="checkbox" name="fut" id="ifut" checked></p>
+            <p><label for="ibas">Basquete</label><input type="checkbox" name="bas" id="ibas"></p>
+            <p><label for="ivol">Volei</label><input type="checkbox" name="vol" id="ivol"></p>
+            <p><label for="iufc">UFC</label><input type="checkbox" name="ufc" id="iufc"></p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
     
 </body>
 </html>

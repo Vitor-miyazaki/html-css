@@ -26,6 +26,24 @@
 
         <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
     </form>
-    
+
+    <!--Cor, nível de satisfação, -->
+
+    <form action="Cadastro.php" method="post">
+        <fieldset>
+            <legend>Escolha a cor</legend>
+            <p><input type="color" name="cor" id="icor" value="#ffff00"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o seu nível de satisfação</legend>
+            <p><input type="range" name="nivel" id="inivel" min="0" max="5" value="1"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha a sua foto de perfil</legend>
+            <p><input type="file" name="foto" id="ifoto"></p>
+        </fieldset>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+
 </body>
 </html>
