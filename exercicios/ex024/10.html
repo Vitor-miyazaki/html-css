@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão 3</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Exercícios</legend>
+
+            <p><input type="checkbox" name="futebol" id="ifut" checked><label for="ifut">Futebol</label></p>
+            <p><input type="checkbox" name="basqute" id="ibas"><label for="ibas">Basqute</label></p>
+            <p><input type="checkbox" name="volei" id="ivol"><label for="ivol">Volei</label></p>
+            <p><input type="checkbox" name="nataçao" id="inat"><label for="inat">Natação</label></p>
+
+            <p><label for="iest">Onde você mora? </label>
+            <select name="estado" id="iest" required>
+                    <option value="" selected>--Escolha--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select></p>
+
+            <p><label for="imes">Período: </label><input type="month" name="mes" id="imes" required></p>
+
+            <p><label for="iprof">Sua profissão: </label>
+            <input type="text" name="profissao" id="iprof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option value="">Desenvolvedor</option>
+                <option value="">Professor</option>
+                <option value="">Administrador</option>
+                <option value="">Engenheiro</option>
+            </datalist></p>
+
+            <p><label for="iemail">Email: </label><input type="email" name="email" id="iemail" required autocomplete="email"></p>
+
+            <p><label for="idata">Data: </label><input type="date" name="data" id="idata" required></p>
+
+            <p><label for="imedia">Média escolar: </label><input type="number" name="media" id="imedia" required min="0" max="10" step="0.5" placeholder="0 a 10"></p>
+
+            <p><input type="radio" name="sexo" id="mas" checked value="M"><label for="mas"> Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="F"><label for="fem"> Feminino</label>
+            </p>
+
+            <p><label for="mens">Mensagem: </label><br>
+                <textarea name="mensagem" id="mens" cols="30" rows="10" required></textarea>
+            </p>
+
+            <P><label for="itel">Telefone: </label><input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="DDD + 9 Dígitos"></P>
+
+            <p><label for="ihora">Hora: </label><input type="time" name="hora" id="ihora" required></p>
+
+            <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
