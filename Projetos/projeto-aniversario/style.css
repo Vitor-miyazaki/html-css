@@ -1,0 +1,118 @@
+@Charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0px;
+}
+
+:root{
+    --font00: 'Dancing Script', cursive;
+}
+
+body{
+    height: 100vh;
+    background: white url('imagens/coração\ \(3\).jpg') no-repeat fixed center center /cover;
+  
+}
+
+#container1{
+    max-width: 450px;
+    min-width: 250px;
+    max-height: 500px;
+    min-height: 450px;
+    margin: auto;    
+    background: black url('imagens/img/foto\ \(55\).jpeg') no-repeat fixed center center /contain;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: var(--font00);
+    font-size: calc(1em + 3vw);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.459);
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    background-color:rgba(78, 1, 1, 0.829);
+    max-width: 1050px;
+    min-width: 250px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+#container2{
+    max-width: 1000px;
+    min-width: 100px;
+    max-height: 580px;
+    min-height: 100px;
+    background: rgba(78, 1, 1, 0.829) url('imagens/img/foto\ \(2\).jpg') no-repeat fixed left top /contain;
+    border: 5px solid rgba(78, 1, 1, 0.829);
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 3%;
+}
+
+#container2 > p{
+    font-size: calc(.5em + 1.1vw);
+    max-width: 400px;
+    min-width: 100px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 37vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 15px;
+    line-height: 1.5em;
+}
+
+#container3{
+    max-width: 1000px;
+    min-width: 300px;
+    max-height: 580px;
+    min-height: 300px;
+    margin-top: 50px;
+    margin-left: 22vw;
+    background:rgba(78, 1, 1, 0.829) url('imagens/img/foto\ \(41\).jpeg') no-repeat fixed right top /contain;
+    border: 5px solid rgba(78, 1, 1, 0.829);
+    border-radius: 20px;
+    
+}
+
+#container3 > p{
+    font-size: calc(.5em + 1.1vw);
+    max-width: 400px;
+    min-width: 200px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 10%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 15px;
+    line-height: 1.5em;
+}
+
+
+#container4{
+    max-width: 820px;
+    min-width: 300px;
+    max-height:600px;
+    min-height: 500px;
+    margin: auto; 
+    margin-top: 50px;
+    background: white url('imagens/img/foto\ \(45\).jpeg') no-repeat fixed center center /contain;
+    background-attachment: ;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+strong{
+    color: rgb(241, 16, 16);
+}
+
