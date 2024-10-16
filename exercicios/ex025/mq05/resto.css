@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+
+header{
+    height: 17vh;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+nav > span{
+    display: none;
+}
+
+a{
+    display: inline;
+    margin: 0px;
+}
+
+a:hover{
+    font-size: 1em;
+}
+
+main{
+    width: 750px;
+    margin: auto;
+}
+
+
+
+}

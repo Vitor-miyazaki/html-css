@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Color, Range e File</h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Escolha sua cor</legend>
+            <p><input type="color" name="cor" id="icor" value="#00ff00"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual o seu nível de contentamento com a empresa/produto:</legend>
+            <p><input type="range" name="nivel" id="inivel" min="0" max="5" value="3"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Foto de perfil:</legend>
+            <p><input type="file" name="Foto" id="ifoto"></p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+
+    <!--Cor, nível de satisfação, -->
+
+    <form action="Cadastro.php" method="post">
+        <fieldset>
+            <legend>Escolha a cor</legend>
+            <p><input type="color" name="cor" id="icor" value="#ffff00"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o seu nível de satisfação</legend>
+            <p><input type="range" name="nivel" id="inivel" min="0" max="5" value="1"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha a sua foto de perfil</legend>
+            <p><input type="file" name="foto" id="ifoto"></p>
+        </fieldset>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+
+</body>
+</html>

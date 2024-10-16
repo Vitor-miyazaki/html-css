@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes 02</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        div > p{
+            display: none;
+        }
+        
+        div{ 
+            color: red;
+            font: normal normal 1em arial, helvetica, sans-serif;
+            }
+
+        div:hover{
+            font: normal bold 1em arial, helvetica, sans-serif;
+        }    
+
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: black;
+            width: 130px;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo 02 de Pseudo-classes</h1>
+    <p>&rarr; Leia o texto abaixo e execute o comando proposto</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO OCULTO!</p>
+    </div>
+    <p>Fim do exercício</p>
+
+    <p style="text-align: center;"><a href="ideclass.html" target="_self" rel="prev">1</a> <a href="pseudoclass1.html" target="_self" rel="prev">2</a></p>
+</body>
+</html>

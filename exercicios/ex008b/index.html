@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+</head>
+<body>
+    <h1>FORMATAÇÃO DE TEXTO - PARTE 02</h1>
+    <hr>
+    <h2>Trechos de códigos</h2>
+    <pre>
+        <code>
+num = int(input('Digite um número')) if num % 2 == 0:
+    print(f'0 número {num} é par')
+else:
+    print(f'0 número {num} é ímpar')
+print('FIM DO PROGRAMA')
+        </code>
+    </pre>
+    <p>Para explicar, o que houve anteriormente. Foi adicionado código da línguagem <em>Python</em>. Entretanto, para ficar com a estruturação ácima, foi utilizado duas tags.</p>
+    <p><strong><ins>A tag &lt;code&gt;</ins></strong> serve para que todas as letras tenham o mesmo espaçamento, dessa forma facilitando a visualização de cada letra e número para o entendimento do código</p>
+    <p><strong><ins>A tag &lt;pre&gt;</ins></strong> serve para que as frases, palavras, letras fiquem igual ao que postamos no <em>Visual Code</em>. Por exemplo, neste caso, no navegador o código ficou a esquerda e com as mesmas quebras de linha que tem no arquivo do <em>VS code</em>.</p>
+    <p>Um macete interessante que foi aprendido durante este exercício, é de colocar o parágrafo a esquerda ou a direita, de forma mais ágil. Quando clicamos em <strong>"Tab"</strong>, <mark>o parágrafo vai para a direita</mark>. Quando clicamos em <strong>"shift" + "Tab"</strong><mark> o parágrafo vai para a esquerda</mark>.</p>
+    <h2>"Citações"</h2>
+    <p>Existe duas formas de representar as citações. Sendo elas as citações simples e citações completas.</p>    
+    <p>
+    Começando pela citação simples. Segundo o prof° Guanabara:
+        <q><ins>O texto que estiver entre &lt;q&gt; e &lt;/q&gt; já vai receber automaticamente as aspas, mas não terá nenhum deslocamento.</ins></q></p>
+    <p>Já a citações completas, segundo o próprio prof° Guanabara em seu PDF de <em>FORMATAÇÃO DE TEXTOS</em>, diz que:</p> 
+    <blockquote cite="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/08%20-%20Formata%C3%A7%C3%A3o%20de%20Textos.pdf">
+        <ins>Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo só para si. Nesse caso, colocaremos tudo dentro de &lt;blockquote&gt; e &lt;/blockquote&gt; e o texto ganha um recuo automaticamente. Podemos também colocar um link para o texto original, usando o parâmetro cite dentro da tag</ins>
+    </blockquote>
+    <h2>Significado das abreviações</h2>
+    <p>Sempre que utilizar uma abreviação, podemos utilizar <strong>a tag &lt;abbr&gt;.</strong> Esta tag, faz com que ao passar o mouse por cima desta abreviação, apareça uma pequena legenda explicando o nome completo deste componente. Isso facilita tanto ao usuário, como os mecânimos de busca. Por exemplo, <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2><bdo dir="rtl">Texto invertido</bdo> / Texto invertido</h2>
+    <p><strong>A tag &lt;bdo dir="rtl ou ltr"&gt;</strong> serve justamente para dar uma ordem para as letras, sejam elas da direita para esquerda <abbr title="Right to Left"><strong>"rtl"</strong></abbr> ou da esquerda para a direita <abbr title="Left to Right"><strong>"ltr"</strong></abbr>.</p>
+    
+    
+</body>
+</html>

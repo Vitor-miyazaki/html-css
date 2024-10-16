@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px){
+
+main{
+    margin-top: 20vh;
+    
+
+}
+.container{
+    background-color: white;
+    width: 700px;
+    height: 375px;
+    margin: auto;
+    border-radius: 20px 20px;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.233);
+
+    
+}
+    
+section{
+    float: left;
+    width: 350px;
+    border-radius: 20px 20px;   
+}
+
+h2{
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+
+section > h3{
+    margin-bottom: 15px;
+}
+
+h4{
+    width: 200px;
+    padding-bottom: 10px;
+}  
+
+article{
+    float: right;
+    width: 350px;
+    border-radius: 0px 20px 20px 0px;
+    
+    
+}
+
+article > h3{
+    padding-left: 40px;
+    padding-top: 12px;
+}
+
+article > div{
+    width: 250px;
+    padding: 8px 7px 9.5px 7px;
+ }
+
+.txt{
+    width: 70px;
+     
+}
+
+.dados{
+    width: 120px;
+    
+}
+
+article > a{  
+    width: 230px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 12px;
+}
+
+.attribution { 
+    margin-top: 15vh
+}
+
+}
+
+@media screen and (min-width: 1200px){
+
+body{
+    background-image: url('assets/images/fundo00.jpg');
+}    
+
+main{
+    background-color: white;
+    padding-top: 10vh;
+    height: 78vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 7vh;
+    
+  
+}
+
+article > div{
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+}
+
+.attribution { 
+    color: white;
+    margin-top: 2vh
+}
+
+.attribution a { color: yellow; }
+
+}
+
+
+
+

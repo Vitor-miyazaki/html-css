@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+
+        table{
+            padding-left: 30px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+            margin: auto;
+            
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        caption{
+            padding: 15px;
+            font-size: 1.6em;
+            font-weight: bolder;
+            background-color: rgb(238, 235, 235);
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: rgb(66, 65, 65);
+        }
+
+        thead, tfoot{
+            background-color: rgb(66, 65, 65);
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(203, 224, 240)
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(87, 171, 235)
+        }
+        
+        tfoot > th{
+            background-color: ;
+        }
+
+        div{
+        text-align: center;
+        }
+
+        a{  
+            padding: 5px;
+            text-decoration: none;
+            display: inline-block;
+            
+        }
+
+    a:hover{
+            color: red;
+            font-weight: bolder;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Anatomia da tabela
+    table
+
+        caption
+
+        thead
+            tr > th > td
+        tbody
+            tr > th > td
+        tfoot
+            tr > th > td -->
+
+    <table>
+        <caption>Tabela: Região x População no Brasil</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>Região Sudeste</td>
+                <td class="numero">84 847 187</td>
+            </tr>
+            <tr>
+                <td>Região Nordeste</td>
+                <td class="numero">54 644 582</td>
+            </tr>
+            <tr>
+                <td>Região Sul</td>
+                <td class="numero">29 933 315</td>
+            </tr>
+            <tr>
+                <td>Região Norte</td>
+                <td class="numero">29 933 315</td>
+            </tr>
+            <tr>
+                <td>Região Centro-Oeste</td>
+                <td class="numero">29 933 315</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">População total</th>
+                <td class="numero"><strong>00000</strong></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cupiditate deserunt laboriosam accusamus repudiandae, laborum beatae vel enim. Maiores quaerat eum temporibus amet accusamus! Ab nulla vero saepe placeat eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aperiam quisquam. Animi ipsam tenetur perferendis quod. Totam qui officiis quisquam delectus praesentium illo culpa quo neque! Praesentium sit error dignissimos.</p>
+
+    <a href="index.html" target="_self" rel="prev">
+        <p>01</p>
+    </a>
+
+    <a href="03.html">
+        <p>03</p>
+    </a>
+
+    <a href="04.html" target="_self" rel="next"><p>04</p></a>
+
+    <a href="05.html" target="_self" rel="next"><p>05</p></a>
+
+    <a href="06.html" target="_self" rel="next"><p>06</p></a>
+</body>
+</html>

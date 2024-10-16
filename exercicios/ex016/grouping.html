@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML</title>
+</head>
+<style>
+    body{
+        background-color: rgb(70, 116, 116);
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    header{
+        background-color: white;
+        height: 115px;
+        margin: 10px 5px;
+        padding: 20px 10px;
+    }
+
+    header > h1{
+        margin-bottom: 15px;
+        width: 170px;
+        padding-left: 4px;
+        border: 10px solid black;
+        border-image: url('border.png') 25 repeat;
+            }
+
+    header > nav{
+        background-color: rgb(70, 116, 116);
+        height: 15px;
+        padding: 10px;
+        box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.479);
+        }
+
+    header > nav > a{
+        color: white;
+        font-weight: bold;
+        margin-right: 60px;
+        padding: 5px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 17px 1px rgba(0, 0, 0, 0.137);
+        }
+
+    main{
+        background-color: white;
+        margin: 5px 5px 15px 5px;
+        padding: 10px;
+    }
+
+    .artigo {
+        
+        margin-bottom: 10px;
+        background-color: rgb(181, 198, 214);
+        margin-top: 10px;
+        border-radius: 1px 10px;
+        height: 115px;
+        padding: 0px 5px;
+    }
+
+    main > section > article > h2{
+        margin: 0px;
+    }
+
+    main > section > article > aside{
+        
+        background-image: linear-gradient(90deg, #7e889296, #b5c6d6, #b5c6d6);
+        font-weight: bold;
+        padding: 0px 5px;
+        border-radius: 7px;
+    }
+    footer{
+        background-color: black;
+        margin: -8px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    footer > p{
+        margin: 0px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    div{
+        background-color: white;
+        height: 300px;
+        width: 300px;
+        margin: 20px auto;
+        border-radius: 50%;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1>Cabeçalho</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="assunto">Esportes Política Técnologia</section>
+        <section class="artigo">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo voluptatibus, est vel explicabo saepe consequatur nihil possimus necessitatibus nam corrupti dolor sunt illo obcaecati porro tempore? Sapiente, voluptatibus fugit!</p>
+                <aside>Artigo escrito por José da Silva</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Curso em vídeo</p>
+    </footer>
+    <div></div>
+
+
+</body>
+</html>

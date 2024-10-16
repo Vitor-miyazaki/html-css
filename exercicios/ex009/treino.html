@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>TIPOS DE LISTAS</h1>
+    <hr>
+    <ol>
+        <li><h2>Listas Ordenadas</h2>
+            <ol>
+                <li>Lista que possui uma sequência</li>
+                <li>Representada pela TAG &lt;ol&gt; combinada com a tag &lt;li&gt;</li>
+                <li>Números, letras e algarísmos romanos (1,A,a,I,i). Utilizando a tag &lt;ol type="1"&gt;</li>
+                <li>A tag &lt;ol type="A" start="5"&gt; cria a lista a partir do 5° algorítmo, conforme o exemplo abaixo:</li>
+                <ol type="A" start="5">
+                    <li>Teste</li>
+                    <li>Teste</li>
+                    <li>Teste</li>
+                </ol>
+                <li>Para criação das listas podemos utilizar o comando (<strong>li*3</strong>). Esse comando indica que o sistema deve fazer 3 listas com a tag &lt;li&gt;. Isso ajuda na velocidade da criação.</li>
+            </ol>
+
+        <li><h2>Listas Não Ordenadas</h2>
+            <ul type="square">
+                <li>Lista que não possui uma sequência lógica</li>
+                <li>Representada pela TAG &lt;ul&gt; combinada com a TAG &lt;li&gt;</li>
+                <li>Disc, square, circle. Utilizando a TAG &lt;ul type="circle"&gt;, conforme o exemplo abaixo:</li>
+                <ul type="circle">
+                    <li>Teste</li>
+                    <li>Teste</li>
+                    <li>Teste</li>
+                </ul>
+            </ul>
+
+        <li><h2>Listas de Definição</h2>
+            <ol type="i" start="50">
+                <li>TAG &lt;dl&gt; &rarr; <em>Definition List</em>. Tag que inicia e termina uma lista de definição.</li>
+                <li>TAG &lt;dt&gt; &rarr; <em>Definition Term</em>. Tag que define o termo</li>
+                <li>TAG &lt;dd&gt; &rarr; <em>Definition Description</em>. Tag que descreve o significado do termo</li>
+            </ol>
+            <dl>
+                <dt><abbr title="HyperText Markup Language"><strong>HTML</strong></abbr></dt>
+                <dd>Línguagem de marcação para determinar o conteúdo da página</dd>
+                <dt><abbr title=" Cascading Style Sheets"><strong>CSS</strong></abbr></dt>
+                <dd>Línguagem de marcação que define o estilo</dd>
+                <dt><strong>JAVA</strong></dt>
+                <dd>Línguagem de <mark style="background-color: darkturquoise;">programação</mark> que permite a interatividade do usuário com a página</dd>
+            </dl>
+    </ol>
+
+         
+</body>
+</html>

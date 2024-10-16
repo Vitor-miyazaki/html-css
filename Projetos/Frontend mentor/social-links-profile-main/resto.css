@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    
+    body{
+        background-color: white;
+    }
+
+    main{
+        margin: 10vh 5vw 5vh 5vw;
+        padding-bottom: 20px;
+    }
+
+    section{
+        margin: auto;
+        width: 400px;
+        
+    }
+}

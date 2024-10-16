@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+</head>
+<style>
+    
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    }
+
+div{
+    display: inline-block;
+    
+}    
+
+li {
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid rgb(163, 163, 163);
+    height: 20px;
+    width: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+li > ul{
+    display: none;
+}
+
+
+li:hover{
+    height: 120px;
+    
+}
+
+li:hover > ul{
+    display: block;
+    
+}
+
+
+.lista {
+    height: 20px;
+    border: none;
+    width: 290px;
+}
+
+.lista:hover{
+    height: 20px;
+    border: none;
+    width: 290px;
+
+}
+
+li > a {
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(90, 90, 90);
+    border: none;
+    
+}
+li > a:hover{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+    
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a::after{
+    content: ' [::after]';
+    color: green;
+}
+
+a::before{
+    content: '[::before] ';
+    color: red;
+}
+
+a:hover {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+
+</style>
+
+<body>
+    
+    <div>
+        <ul>
+            <li type="none">Coluna A
+            <ul type="none">
+                <li class="lista"><a href="https://www.google.com.br/" target="_blank" ref="external">google</a></li>
+                <li class="lista"><a href="https://www.youtube.com/" target="_blank" ref="external">youtube</a></li>
+                <li class="lista"><a href="https://www.cursoemvideo.com/" target="_blank" ref="external">curso em vídeo</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li type="none">Coluna B
+            <ul type="none">
+                <li class="lista"><a href="https://www.google.com.br/" target="_blank" ref="external">google</a></li>
+                <li class="lista"><a href="https://www.youtube.com/" target="_blank" ref="external">youtube</a></li>
+                <li class="lista"><a href="https://www.cursoemvideo.com/" target="_blank" ref="external">curso em vídeo</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+    
+<hr>
+
+        
+<div><a href="pseudoelementos2.html" class="pagina">Página 2</a></div>
+<div><a href="pseudoelementos3.html" class="pagina">Página 3</a></div>
+        
+    
+</body>
+</html>

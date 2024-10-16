@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Select, datalist e textarea</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Escolha o seu estado:</label>
+            <select name="est" id="iest" required>
+                <option value="">--Escolha--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Carina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+                
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Escolha a sua profissão:</label>
+            <input type="text" name="prof" id="iprof" required list="lstprof">
+            <datalist id="lstprof">
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+                <option>Engenheiro</option>
+                <option>Administrador</option>
+            </datalist>
+            
+        </p>
+
+        <p>
+            <label for="imens">Mensagem: </label><BR>
+            <textarea name="mens" id="imens" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+
+    </form>
+
+    <!--Select, datalist e textarea-->
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Qual o seu estado?</label>
+            <select name="estado " id="iest" required>
+                    <option value="" selected>--Escolha--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Qual a sua profissão?</label>
+            <input type="text" name="profissão" id="iprof" list="lstprof" required>
+                <datalist id="lstprof">
+                    <option>Professor</option>
+                    <option>Desenvolvedor</option>
+                    <option>Administrador</option>
+                    <option>Engenheiro</option>
+                </datalist>
+        </p>
+        <p> <label for="imens">Mensagem:</label><br>
+            <textarea name="Mensagem" id="imens" cols="30" rows="10"></textarea>
+        </p>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+
+    </form>
+
+    <!--Select, datalist e textarea-->
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="est">Estado: </label>
+            <select name="estado" id="est" required>
+                    <option value=""selected>--Escolha--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>      
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="profissao" id="iprof" list="lstprof" required>
+                <datalist id="lstprof">
+                    <option value="">Professor</option>
+                    <option value="">Desenvolvedor</option>
+                    <option value="">Engenheiro</option>
+                    <option value="">Vendedor</option>
+                </datalist>
+        </p>
+        <p>
+            <label for="mens">Mensagem: </label><br>
+            <textarea name="mensagem" id="mens" cols="30" rows="10" required></textarea>
+        </p>
+
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+    
+    <!--Select, datalist e textarea-->
+
+    <form action="cadastro.php" method="post">
+        
+        <p>
+            <label for="est">Estado: </label>
+            <select name="estado" id="est" required>
+                    <option value="" selected>--Escolha--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="profissao" id="prof" list="lstprof" required>
+                <datalist id="lstprof">
+                    <option value="">Professor</option>
+                    <option value="">Desenvolvedor</option>
+                    <option value="">Engenheiro</option>
+                    <option value="">Vendedor</option>
+                </datalist>
+        </p>
+        <p>
+            <label for="mens">Mensagem: </label><br>
+            <textarea name="mensagem" id="mens" cols="30" rows="10" required></textarea>
+        </p>
+
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+</head>
+<style>
+    h1{
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    table{
+        border-collapse:collapse;
+    }
+
+    tbody > tr:nth-child(2n){
+        background-color: lightgrey;
+    }
+
+    th,td{
+        width: 100px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+    /*2n, 3n, 2n-1, even(par), odd(ímpar)*/
+
+</style>
+
+<body>
+    <h1>Treino: AnkiDroid</h1>
+
+    <h2>Table</h2>
+
+    <table>
+        <caption>Exemplo de tabela zebrada</caption>
+        <tbody>
+            <tr>
+                <th>A</th>
+                <td>111</td>
+                <td>555</td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td>222</td>
+                <td>666</td>
+            </tr>
+            <tr>
+                <th>C</th>
+                <td>333</td>
+                <td>777</td>
+            </tr>
+            <tr>
+                <th>D</th>
+                <td>444</td>
+                <td>888</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Formulários</h2>
+    <p>São 2 tipos de métodos para formulários, sendo <strong>GET</strong> e <strong>POST</strong>.</p>
+    
+    <p>O método POST deve ser utilizado para suportar pesos <ins>ácima de 3000 bites ou 3000 carácteres</ins>, ou seja, suporta formulários em que haja anexo de arquivos (file). Além disso, traz um pouco <ins>mais de segurança</ins>, afinal não aparecem os dados de preenchimento do usuário na URL, logo devemos utilizalos para dados pessoais que precisem de uma segurança maior, como as senhas (password).</p>
+    
+    <p><strong>OBS:</strong> Apesar do método post ser mais seguro em relação ao GET, não siginifica que seus dados estão totalmente ocultos. Para resolver esse problema será necessário a aprendizagem de sites <strong>https.</strong> </p>
+
+    <h2>Iframe</h2>
+
+    <p>Criar um link que abra um iframe de sua própria página, mas bloquear a utilização de formulários.</p>
+
+    <p><a href="07.html"  target="frame" rel="prev">LINK</a></p>
+
+    <iframe src="" frameborder="0" name="frame" referrerpolicy="no-referrer" sandbox="sandbox" scolling="no"></iframe>
+
+    <p>Quais são os problemas do iframe?</p>
+    <li>Segurança;</li>
+    <li>Incaompatibilidade com navegadores;</li>
+    <li>Problemas com as ferramentas de busca, como google;</li>
+    <li>Acassibilidade (cegos por exemplo).</li>
+
+    <h2>Formulário</h2>
+
+    <p>Desafio da média escolar</p>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="imed">Média: </label> <input type="number" name="media" id="imed" required min="0" max="10" step="0.5" placeholder="0 a 10"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+
+    <p>Desafio do período</p>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="imes">Período: </label><input type="month" name="mens" id="imes" required></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+
+    <p>Desafio da data</p>
+    
+    <form action="cadastro.php" method="get">
+        <p><label for="idata">Data: </label><input type="date" name="data" id="idata" required></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+
+    <p>Desafio da hora</p>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="ihora">Hora: </label><input type="time" name="hora" id="ihora" required></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+
+    <p>Desafio do email</p>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="iemail">Email: </label><input type="email" name="email" id="iemail" required autocomplete="email"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">    
+    </form>
+
+    <p>Deafio do telefone</p>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="itel">Telefone: </label><input type="tel" name="telefone" id="itel" required placeholder="ddd + dígitos" autocomplete="tel"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form>
+    
+    <p>Quais o grande problema dos formulários em html?</p>
+
+    <p>É a incompátibilidade com diferentes tipos de navegadores. A melhor forma de resolver este problema é utilizando a linguagem de programação (javascripit por exemplo).</p>
+
+
+</body>
+</html>

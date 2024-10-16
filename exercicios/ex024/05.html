@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Radio e Checkbox</h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Escolha o seu sexo:</legend>
+            <input type="radio" name="sexo" id="mas" value="M" checked><label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Marque os esportes que você gosta</legend>
+            <p><input type="checkbox" name="fut" id="ifut"><label for="ifut"> Futebol</label></p>
+            <p><input type="checkbox" name="bas" id="ibas"><label for="ibas"> Basquete</label></p>
+            <p><input type="checkbox" name="vol" id="ivol"><label for="ivol"> Volei</label></p>
+            <p><input type="checkbox" name="art" id="iart"><label for="iart"> Artes Marciais</label></p>
+        </fieldset>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+
+    <!--Checkbox e radio-->
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Escolha o seu sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="mas" value="M" checked><label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha os seus esportes favoritos</legend>
+            <p><label for="ifut">Futebol</label><input type="checkbox" name="fut" id="ifut" checked></p>
+            <p><label for="ibas">Basquete</label><input type="checkbox" name="bas" id="ibas"></p>
+            <p><label for="ivol">Volei</label><input type="checkbox" name="vol" id="ivol"></p>
+            <p><label for="iufc">UFC</label><input type="checkbox" name="ufc" id="iufc"></p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+    
+</body>
+</html>

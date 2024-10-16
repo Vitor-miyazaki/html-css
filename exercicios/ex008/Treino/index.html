@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark {background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h1>TESTE DE FORMATAÇÃO DE TEXTO</h1>
+    <hr>
+    
+    <h2> &rarr; Texto em negrito</h2>
+    <p>Texto em <b>negrito</b> utilizando a tag &lt;b&gt; (não semantico)</p>
+    <p>Texto em <strong>negrito</strong> utilizando a tag &lt;strong&gt; (semantico)</p>
+    
+    <h2>&rarr; Texto em itálico</h2>
+    <p><i>Texto em itálico</i> representado pela tag &lt;i&gt; (não semantico)</p>
+    <p><em>Texto em itálico</em> representado pela tag &lt;em&gt; (semantico)</p>
+    
+    <h2>&rarr; Texto marcado</h2>
+    <p>Para ter um <mark>texto marcado</mark>, utilizamos a tag &lt;mark&gt;. E para mudança da cor, precisamos definir o estilo, utilizando css. <br>
+        &rarr; Caso queira a mudança da cor, em apenas uma tag, então basta modificar o estilo naquela mesma tag <mark style="background-color: lime;">utilizando a tag</mark> &lt;mark style="background-color:lime;"&gt;  <br>
+        &rarr; Caso queira a mudança da cor em todas as tag's, então é necessário configurar o estilo na tag &lt;head&gt;.</p>
+
+    <h2>&rarr; Texto inserido</h2>
+    <p>A tag para o <ins>texto inserido</ins> é &lt;ins&gt; (semântica) <br>
+       <u>Também existe</u> a tag &lt;u&gt; (não semântica) </p>
+
+    <h2>&rarr; Texto deletado</h2>
+    <p>A tag que representa o <del>texto deletado</del> ou riscado é: &lt;del&gt;</p>
+
+    <h2>&rarr; Texto sobrescrito</h2>
+    <p>Por exemplo: X<sup>20</sup>+3, foi utilizado a tag &lt;sup&gt; no número 20. </p>
+
+    <h2>&rarr; Texto subscrito</h2>
+    <p>Por exemplo: H<sub>2</sub>O, foi utilizado a tag &lt;sub&gt; no dúmero 2.</p>
+
+    <h2>&rarr; Palavres grandes e pequenas</h2>
+    <p>Para fazer uma <big>palavra grande</big>, podemos utilizar a tag &lt;big&gt; (não semântica) <br>
+       Para fazer uma <small>palavra pequena</small>, então utilizamos a tag &lt;small&gt; (semântica) <p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+</head>
+<link rel="stylesheet" href="celular.css" media="all">
+<link rel="stylesheet" href="resto.css">
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span onclick="clicar()"><img src="menu.png" alt="menu"></span>
+        <nav id="menu">           
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+        </nav>
+    </header>
+        <main>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nemo sequi, sed tenetur provident earum ullam deleniti officia ad corrupti ex quas rem amet laboriosam numquam cum vitae laudantium quod.
+            Vero debitis quaerat maiores, iusto obcaecati asperiores esse quos tenetur officia doloremque blanditiis delectus? Cumque deleniti, neque et minima placeat blanditiis corporis excepturi illo. Distinctio velit esse sint repellendus illo?
+            Quia ex, sed modi laborum dolore odio enim. Facilis, sit deleniti suscipit blanditiis neque voluptatum in excepturi praesentium. Modi sunt quas maiores expedita ut non dolor fugit suscipit illo autem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nam consequuntur praesentium possimus, magnam iusto suscipit repudiandae, molestias accusantium deserunt atque hic sunt incidunt? Dolore tenetur eum voluptatum repellendus rem?
+            Nam, reiciendis! Eaque sapiente exercitationem voluptatibus perspiciatis natus maiores necessitatibus sit beatae consequuntur aliquid laboriosam, accusamus cumque nam non et quasi incidunt obcaecati facere magnam iure eveniet quod. Voluptas, id?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus quae eum est quos? Hic inventore iusto blanditiis, debitis nulla quasi quod, ex sit, fugit eos a ea quibusdam rerum?
+            Rerum, repellat. Sed quo, fuga suscipit eius, animi quisquam libero tempore minima, ratione iusto dolores quod facere reprehenderit ex amet velit nesciunt. A suscipit tenetur non molestias nobis maiores soluta.</p>
+        </main>
+
+        <script>
+            var menu = document.getElementById('menu')
+
+            function clicar(){
+                //Ao clicar na tag Span, o que vai ocorrer?
+                if (menu.style.display == 'block'){
+                    menu.style.display = 'none';
+                } else{
+                    menu.style.display = 'block'
+                }
+            }
+        </script>
+    
+    
+</body>
+</html>

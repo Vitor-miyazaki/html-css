@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão 02</title>
+</head>
+    <style>
+
+        /* @charset "UTF-8";
+
+        *{
+            
+        }
+
+        @font-face{ 
+            font-family: '';
+            src: url('') format('');
+            font-weight: normal;
+            font-style: normal;
+        } */
+
+        table{
+            border-collapse: collapse;  
+                   
+                        
+        }
+
+        th, td{
+            border: 1px solid black;
+            width: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #container{
+            overflow-x: auto;
+        }
+
+        p{
+            text-indent: 15px;
+        }
+
+        ul{
+            list-style-position: outside;
+        }
+    </style>
+<body>
+    <h1>Revisão 02</h1>
+
+    <h2>Adicionando imagens dinâmicas</h2>
+
+    <picture>
+
+        <source media="(max-width:725px)" srcset="img/foto-p.png" type="image/png">
+
+        <source media="(max-width:1023px)" srcset="img/foto-m.png" type="image/png">
+
+        <img src="img/foto-g.png" alt="imagem grande">
+    </picture>
+    
+    <h2>Formulários</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="ilogin">Login: </label><input type="text" name="login" id="ilogin" required minlength="8" maxlength="12" size="5" placeholder="Login" autocomplete="username"></p>
+        <p><label for="isenha">Senha: </label><input type="password" name="senha" id="isenha" required minlength="8" placeholder="8 dígitos" autocomplete="current-password" size="5"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar"> 
+    </form>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="imed">Média: </label><input type="number" name="media" id="imedia" required min="0" max="10" step="0.5" placeholder="0 a 10"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar"> 
+    </form><br>
+
+    
+    <form action="cadastro.php" method="get">
+        <p><label for="ihora">Hora: </label><input type="time" name="hora" id="ihora" required></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form> <br>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="imes">Período: </label><input type="month" name="mes" id="imes" required></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form><br>
+
+    <form action="cadastro.php" method="get">
+        <p><label for="idata">Data: </label><input type="date" name="data" id="idata" required></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar"> 
+    </form> <br>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="itel">Telefone: </label><input type="tel" name="tel" id="itel" required placeholder="DDD + 9 dígitos" autocomplete="tel"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form> <br>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="iemail">Email: </label><input type="email" name="email" id="ieamail" required autocomplete="email"></p>
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+    </form> <br>
+
+    <hr>
+
+    <p>O problema dos formulários em HTML é a sua incopatibilidade com diferentes tipos de navegadores. A solução para tal problema é utilizar formulários com programação, por exemplo com Javascript.</p>
+
+    <p>Existem 2 tipos de metódos para formulários, sendo o GET e o POST. Devemos usar o POST para:</p>
+    <ul>
+        <li>Formulários que ultrapassem o peso de 3000 bites, equivalente a 3000 carácteres. Formulários do tipo "file" por exemplo.</li> <br>
+
+        <li>Segurança, afinal os dados pessoais do usuário não vão aparecer na URL, logo é gerado menos exposição. Neste caso, os formulários do tipo "password" são um exemplo. OBS: Por mais que tenha mais segurança, ainda assim devemos ter conhecimento em "https", pois só assim é possível garantir completa ocultação dos dados.</li>
+    </ul>
+
+    <h2>Tabela responsiva</h2>
+
+    <p>Exemplo de tabela do ex. 21:</p>
+
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">TV 40"</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">Home Theater</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">Samsung Galaxy S20</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">iPad Mini</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">PlayStation 4</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lava Louças</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">Amazon Echo</th>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--
+        table
+        colgroup
+        caption
+        thead > tr > th, td
+        tbody > tr > th, td
+        tfoot > tr > th, td
+    -->
+
+    
+
+
+
+</body>
+</html>
